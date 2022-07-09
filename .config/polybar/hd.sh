@@ -1,0 +1,4 @@
+#!/bin/sh
+
+hdd="$(df -h | awk 'NR==4{print $3, $5}')"
+echo -e " $hdd"
